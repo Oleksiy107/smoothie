@@ -1,0 +1,27 @@
+// .header-outer {
+//   &__header-inner {
+//     @include flexGapCenter();
+//   }
+// }
+.header-inner {
+  &__header-navigation {
+    padding: 2vw;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    align-items: flex-start;
+
+    @include flexGapCenter();
+  }
+  &__img {
+    width: 50px;
+    position: fixed;
+    right: 2vw;
+  }
+}
+.header-inner {
+  &__header-navigation > a {
+    color: $colorWhite;
+    font-size: 2vw;
+  }
+}

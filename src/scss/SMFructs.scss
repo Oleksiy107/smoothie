@@ -1,0 +1,16 @@
+.fruits-block {
+  @include fructVegatable1();
+  &__list-fruits {
+    @include fructVegatable2();
+  }
+}
+
+.list-fruits {
+  &__img {
+    @include fructVegatableImg();
+    @include widtHeaderImg();
+  }
+  &__item {
+    @include fructVegatableFlexColum();
+  }
+}

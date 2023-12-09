@@ -1,0 +1,19 @@
+.vegetable-block {
+  @include fructVegatable1();
+  &__title {
+    padding: 2vw 0;
+  }
+  &__list-vegetable {
+    @include fructVegatable2();
+  }
+}
+
+.list-vegetable {
+  &__img {
+    @include fructVegatableImg();
+    @include widtHeaderImg();
+  }
+  &__item {
+    @include fructVegatableFlexColum();
+  }
+}
